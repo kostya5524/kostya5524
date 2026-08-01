@@ -6,7 +6,7 @@ name: Profile summary cards
 
 on:
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 5 * * *"   # kept well away from the other workflows that push to main
   workflow_dispatch:
 
 concurrency:
@@ -23,10 +23,31 @@ jobs:
 
       # One run, no THEME filter: the action wipes its output folder before writing,
       # so two themed runs would leave only the last one. Empty THEME = every theme.
+      # AUTO_PUSH is off — its built-in push has only two retries and loses the race
+      # against the other workflows that commit to main.
       - name: Generate cards (all themes)
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
           UTC_OFFSET: 3
+          AUTO_PUSH: false
+
+      - name: Commit result
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A profile-summary-card-output
+          git diff --staged --quiet && echo "nothing changed" && exit 0
+          git commit -m "chore: refresh profile summary cards"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash && git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push attempt $attempt failed, retrying..."
+            sleep 7
+          done
+          echo "could not push after 5 attempts"
+          exit 1

@@ -1,8 +1,8 @@
-name: Activity feed
+﻿name: Activity feed
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "15 */6 * * *"  # offset so it does not collide with the other pushers
   workflow_dispatch:
 
 concurrency:
