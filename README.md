@@ -217,15 +217,14 @@ a training platform on Flask + SQLite, internal tools, custom players.
 ## `> ./how-i-work`
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#0d1117','primaryTextColor':'#a3e635','primaryBorderColor':'#a3e635','lineColor':'#4ade80','secondaryColor':'#161b22','tertiaryColor':'#161b22','fontFamily':'ui-monospace, monospace'}}}%%
 flowchart LR
-    A["💡 real problem<br/>I hit myself"] --> B["⚡ crude prototype<br/>same day"]
+    A["real problem<br/>I hit myself"] --> B["crude prototype<br/>same day"]
     B --> C{"does it<br/>actually help?"}
-    C -->|no| Z["🗑 drop it<br/>no sunk cost"]
-    C -->|yes| D["🐳 dockerize<br/>+ nginx + TLS"]
-    D --> E["📈 monitoring<br/>+ backups"]
-    E --> F["🚀 in production<br/>real users"]
-    F --> G["🧩 extract the tool<br/>→ open source"]
+    C -->|no| Z["drop it<br/>no sunk cost"]
+    C -->|yes| D["dockerize<br/>nginx + TLS"]
+    D --> E["monitoring<br/>+ backups"]
+    E --> F["in production<br/>real users"]
+    F --> G["extract the tool<br/>open source"]
     G --> A
 ```
 
