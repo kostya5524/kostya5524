@@ -254,7 +254,7 @@ flowchart LR
 ## `> tail -f ./activity`
 
 <!--START_SECTION:activity-->
-<!-- This block is filled automatically by GitHub Actions. -->
+1. ❗ Opened issue [#82375](https://github.com/anthropics/claude-code/issues/82375) in [anthropics/claude-code](https://github.com/anthropics/claude-code)
 <!--END_SECTION:activity-->
 
 <br>
