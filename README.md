@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 <!-- ─────────────  HERO  ───────────── -->
 <picture>
@@ -162,35 +162,35 @@ a training platform on Flask + SQLite, internal tools, custom players.
 <!-- Generated nightly by my own GitHub Action (see .github/workflows/summary-cards.yml),
      not fetched from a third-party service — so it never dies with someone else's quota. -->
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/github_dark/0-profile-details.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/default/0-profile-details.svg">
-  <img alt="Profile details" src="./profile-summary-card-output/github_dark/0-profile-details.svg" width="98%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/merko/0-profile-details.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/vue/0-profile-details.svg">
+  <img alt="Profile details" src="./profile-summary-card-output/merko/0-profile-details.svg" width="98%">
 </picture>
 
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/github_dark/3-stats.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/default/3-stats.svg">
-  <img alt="Stats" src="./profile-summary-card-output/github_dark/3-stats.svg" width="48%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/merko/3-stats.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/vue/3-stats.svg">
+  <img alt="Stats" src="./profile-summary-card-output/merko/3-stats.svg" width="48%">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/github_dark/4-productive-time.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/default/4-productive-time.svg">
-  <img alt="Productive time" src="./profile-summary-card-output/github_dark/4-productive-time.svg" width="48%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/merko/4-productive-time.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/vue/4-productive-time.svg">
+  <img alt="Productive time" src="./profile-summary-card-output/merko/4-productive-time.svg" width="48%">
 </picture>
 
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/github_dark/1-repos-per-language.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/default/1-repos-per-language.svg">
-  <img alt="Repos per language" src="./profile-summary-card-output/github_dark/1-repos-per-language.svg" width="48%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/merko/1-repos-per-language.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/vue/1-repos-per-language.svg">
+  <img alt="Repos per language" src="./profile-summary-card-output/merko/1-repos-per-language.svg" width="48%">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/github_dark/2-most-commit-language.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/default/2-most-commit-language.svg">
-  <img alt="Most commit language" src="./profile-summary-card-output/github_dark/2-most-commit-language.svg" width="48%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/merko/2-most-commit-language.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/vue/2-most-commit-language.svg">
+  <img alt="Most commit language" src="./profile-summary-card-output/merko/2-most-commit-language.svg" width="48%">
 </picture>
 
 <br>
