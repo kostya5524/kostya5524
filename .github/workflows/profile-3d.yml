@@ -25,6 +25,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
+      # Another workflow may land a commit on main in between, so rebase and retry
+      # instead of failing the run on a non-fast-forward push.
       - name: Commit result
         run: |
           git config user.name  "github-actions[bot]"
@@ -32,4 +34,13 @@ jobs:
           git add -A profile-3d-contrib
           git diff --staged --quiet && echo "nothing changed" && exit 0
           git commit -m "chore: refresh 3D contribution calendar"
-          git push
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash && git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push attempt $attempt failed, retrying..."
+            sleep 7
+          done
+          echo "could not push after 5 attempts"
+          exit 1
