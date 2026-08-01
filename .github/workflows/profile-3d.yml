@@ -17,8 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Uses PROFILE_TOKEN (PAT with read:user) when available — that is the only
-      # way private contributions show up. Falls back to the built-in token.
+      # The built-in token is enough: private contributions are already exposed by
+      # the "Include private contributions" profile setting.
       - name: Generate 3D contribution SVGs
         uses: yoshi389111/github-profile-3d-contrib@main
         env:
