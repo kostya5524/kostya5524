@@ -1,0 +1,43 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="900" height="130" role="img" aria-label="built in public — kostya5524">
+  <title>built in public — kostya5524</title>
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#f6f8fa"/>
+      <stop offset="100%" stop-color="#eef4ea"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2da44e" stop-opacity=".38"/>
+      <stop offset="50%" stop-color="#1a7f37" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#2da44e" stop-opacity=".38"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a7f37" stop-opacity=".2"/>
+      <stop offset="50%" stop-color="#2da44e" stop-opacity=".12"/>
+      <stop offset="100%" stop-color="#1a7f37" stop-opacity=".2"/>
+    </linearGradient>
+    <clipPath id="fcard"><rect x="0" y="0" width="900" height="130" rx="16"/></clipPath>
+  </defs>
+
+  <style><![CDATA[
+    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .w1 { animation: drift 14s linear infinite; }
+    .w2 { animation: drift 22s linear infinite reverse; }
+    @keyframes drift { from { transform: translateX(0) } to { transform: translateX(-450px) } }
+    .dot { animation: hb 2.4s ease-in-out infinite; }
+    @keyframes hb { 0%,100%{opacity:.35} 50%{opacity:1} }
+    @media (prefers-reduced-motion: reduce) { .w1,.w2,.dot { animation: none } }
+  ]]></style>
+
+  <g clip-path="url(#fcard)">
+    <rect width="900" height="130" fill="url(#fbg)"/>
+    <g class="w2">
+      <path d="M0 92 q112.5 -34 225 0 t225 0 t225 0 t225 0 t225 0 t225 0 t225 0 V130 H0 Z" fill="url(#wave2)"/>
+    </g>
+    <g class="w1">
+      <path d="M0 104 q112.5 -30 225 0 t225 0 t225 0 t225 0 t225 0 t225 0 t225 0 V130 H0 Z" fill="url(#wave1)"/>
+    </g>
+    <text class="mono dot" x="450" y="48" font-size="13" fill="#1a7f37" text-anchor="middle">● built in public</text>
+    <text class="mono" x="450" y="76" font-size="15" fill="#656d76" text-anchor="middle">thanks for scrolling — issues and PRs welcome</text>
+  </g>
+</svg>

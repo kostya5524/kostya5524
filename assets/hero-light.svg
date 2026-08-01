@@ -1,0 +1,148 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="kostya5524 — builder, AI tooling, self-hosted infra">
+  <title>kostya5524 — builder / AI tooling / self-hosted infra</title>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f6f8fa"/>
+      <stop offset="100%" stop-color="#eef4ea"/>
+    </linearGradient>
+
+    <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2da44e" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#2da44e" stop-opacity=".85"/>
+      <stop offset="65%" stop-color="#1a7f37" stop-opacity=".85"/>
+      <stop offset="100%" stop-color="#1a7f37" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2da44e" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#2da44e" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#1a7f37" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+
+    <clipPath id="card"><rect x="0" y="0" width="900" height="300" rx="16"/></clipPath>
+
+    <clipPath id="clip1"><rect class="type type1" x="82" y="186" width="0" height="26"/></clipPath>
+    <clipPath id="clip2"><rect class="type type2" x="82" y="186" width="0" height="26"/></clipPath>
+    <clipPath id="clip3"><rect class="type type3" x="82" y="186" width="0" height="26"/></clipPath>
+  </defs>
+
+  <style><![CDATA[
+    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .prompt { fill: #1a7f37; }
+    .txt    { fill: #1f2328; }
+    .dim    { fill: #656d76; }
+    .lime   { fill: #1a7f37; }
+    .pale   { fill: #24292f; }
+
+    .type1 { animation: t1 15s steps(47) infinite; }
+    .type2 { animation: t2 15s steps(46) infinite; }
+    .type3 { animation: t3 15s steps(46) infinite; }
+    @keyframes t1 { 0%{width:0}  13%{width:479px} 30%{width:479px} 31%{width:0} 100%{width:0} }
+    @keyframes t2 { 0%{width:0}  33%{width:0}     46%{width:469px} 63%{width:469px} 64%{width:0} 100%{width:0} }
+    @keyframes t3 { 0%{width:0}  66%{width:0}     79%{width:469px} 96%{width:469px} 97%{width:0} 100%{width:0} }
+
+    .cur1 { animation: c1 15s steps(47) infinite, blink .9s steps(1) infinite; }
+    .cur2 { animation: c2 15s steps(46) infinite, blink .9s steps(1) infinite; }
+    .cur3 { animation: c3 15s steps(46) infinite, blink .9s steps(1) infinite; }
+    @keyframes c1 { 0%{x:82px;opacity:1} 13%{x:561px} 30%{x:561px;opacity:1} 31%{x:82px;opacity:0} 100%{x:82px;opacity:0} }
+    @keyframes c2 { 0%{x:82px;opacity:0} 32%{x:82px;opacity:0} 33%{opacity:1} 46%{x:551px} 63%{x:551px;opacity:1} 64%{x:82px;opacity:0} 100%{opacity:0} }
+    @keyframes c3 { 0%{x:82px;opacity:0} 65%{x:82px;opacity:0} 66%{opacity:1} 79%{x:551px} 96%{x:551px;opacity:1} 97%{x:82px;opacity:0} 100%{opacity:0} }
+    @keyframes blink { 0%,49%{fill-opacity:1} 50%,100%{fill-opacity:.15} }
+
+    .scan { animation: scan 6s ease-in-out infinite; }
+    @keyframes scan { 0%{transform:translateX(-120px);opacity:0} 12%{opacity:.5} 88%{opacity:.5} 100%{transform:translateX(900px);opacity:0} }
+
+    .eq rect { transform-box: fill-box; transform-origin: center bottom; }
+    .b1 { animation: eq 1.6s ease-in-out infinite; }
+    .b2 { animation: eq 1.6s ease-in-out .2s infinite; }
+    .b3 { animation: eq 1.6s ease-in-out .4s infinite; }
+    .b4 { animation: eq 1.6s ease-in-out .6s infinite; }
+    .b5 { animation: eq 1.6s ease-in-out .8s infinite; }
+    .b6 { animation: eq 1.6s ease-in-out 1.0s infinite; }
+    @keyframes eq { 0%,100%{ transform: scaleY(.28) } 50%{ transform: scaleY(1) } }
+
+    .pulse { animation: pulse 3.2s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{opacity:.4} 50%{opacity:1} }
+
+    @media (prefers-reduced-motion: reduce) {
+      .type1,.type2,.type3,.cur1,.cur2,.cur3,.scan,.b1,.b2,.b3,.b4,.b5,.b6,.pulse { animation: none; }
+      .type1 { width: 479px; }
+      .cur1  { opacity: 1; x: 561px; }
+    }
+  ]]></style>
+
+  <g clip-path="url(#card)">
+    <rect width="900" height="300" fill="url(#bg)"/>
+    <rect width="900" height="300" fill="url(#grid)"/>
+    <ellipse cx="120" cy="20" rx="360" ry="180" fill="url(#glow)"/>
+    <ellipse cx="840" cy="300" rx="300" ry="160" fill="url(#glow)" opacity=".7"/>
+    <rect class="scan" x="0" y="0" width="120" height="300" fill="url(#accentLine)" opacity=".10"/>
+  </g>
+
+  <rect x="22" y="22" width="856" height="256" rx="13" fill="#ffffff" fill-opacity=".92" stroke="#1a7f37" stroke-opacity=".28"/>
+  <path d="M35 22 H865" stroke="url(#accentLine)" stroke-width="1.5"/>
+
+  <circle cx="48" cy="45" r="5.5" fill="#ff5f56"/>
+  <circle cx="68" cy="45" r="5.5" fill="#ffbd2e"/>
+  <circle cx="88" cy="45" r="5.5" fill="#27c93f"/>
+  <text class="mono dim" x="112" y="50" font-size="12.5">kostya5524@github — ~/profile</text>
+  <text class="mono lime pulse" x="770" y="50" font-size="12.5">● online</text>
+  <path d="M22 66 H878" stroke="#1a7f37" stroke-opacity=".18"/>
+
+  <text class="mono prompt" x="46" y="104" font-size="16">~ $</text>
+  <text class="mono txt"    x="82" y="104" font-size="16">whoami</text>
+
+  <text class="mono pale" x="46" y="134" font-size="16.5">kostya5524 :: builder / AI tooling / self-hosted infra</text>
+
+  <text class="mono prompt" x="46" y="172" font-size="16">~ $</text>
+  <text class="mono txt"    x="82" y="172" font-size="16">cat focus.txt</text>
+
+  <text class="mono prompt" x="46" y="206" font-size="16">&gt;</text>
+  <text class="mono lime" x="82" y="206" font-size="17" textLength="479" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip1)">MCP servers and tools that give AI agents hands</text>
+  <text class="mono lime" x="82" y="206" font-size="17" textLength="469" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip2)">products shipped end-to-end: infra -&gt; payments</text>
+  <text class="mono lime" x="82" y="206" font-size="17" textLength="469" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip3)">self-hosted by default: docker, nginx, openwrt</text>
+  <rect class="cur1" x="82" y="190" width="9" height="20" fill="#1a7f37"/>
+  <rect class="cur2" x="82" y="190" width="9" height="20" fill="#1a7f37"/>
+  <rect class="cur3" x="82" y="190" width="9" height="20" fill="#1a7f37"/>
+
+  <g class="eq" opacity=".9">
+    <rect class="b1" x="700" y="112" width="7" height="76" rx="3" fill="#2da44e" opacity=".45"/>
+    <rect class="b2" x="716" y="112" width="7" height="76" rx="3" fill="#2da44e" opacity=".6"/>
+    <rect class="b3" x="732" y="112" width="7" height="76" rx="3" fill="#1a7f37" opacity=".8"/>
+    <rect class="b4" x="748" y="112" width="7" height="76" rx="3" fill="#2da44e" opacity=".6"/>
+    <rect class="b5" x="764" y="112" width="7" height="76" rx="3" fill="#2da44e" opacity=".4"/>
+    <rect class="b6" x="780" y="112" width="7" height="76" rx="3" fill="#1a7f37" opacity=".3"/>
+  </g>
+
+  <g class="mono" font-size="12">
+    <g>
+      <rect x="46" y="232" width="72" height="26" rx="13" fill="#dafbe1" stroke="#1a7f37" stroke-opacity=".35"/>
+      <text class="lime" x="82" y="249" text-anchor="middle">Python</text>
+    </g>
+    <g>
+      <rect x="128" y="232" width="72" height="26" rx="13" fill="#dafbe1" stroke="#1a7f37" stroke-opacity=".35"/>
+      <text class="lime" x="164" y="249" text-anchor="middle">Docker</text>
+    </g>
+    <g>
+      <rect x="210" y="232" width="64" height="26" rx="13" fill="#dafbe1" stroke="#1a7f37" stroke-opacity=".35"/>
+      <text class="lime" x="242" y="249" text-anchor="middle">nginx</text>
+    </g>
+    <g>
+      <rect x="284" y="232" width="150" height="26" rx="13" fill="#dafbe1" stroke="#1a7f37" stroke-opacity=".35"/>
+      <text class="lime" x="359" y="249" text-anchor="middle">Cloudflare Workers</text>
+    </g>
+    <g>
+      <rect x="444" y="232" width="56" height="26" rx="13" fill="#dafbe1" stroke="#1a7f37" stroke-opacity=".35"/>
+      <text class="lime" x="472" y="249" text-anchor="middle">MCP</text>
+    </g>
+    <g>
+      <rect x="510" y="232" width="70" height="26" rx="13" fill="#dafbe1" stroke="#1a7f37" stroke-opacity=".35"/>
+      <text class="lime" x="545" y="249" text-anchor="middle">Linux</text>
+    </g>
+  </g>
+</svg>
