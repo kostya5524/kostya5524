@@ -183,19 +183,6 @@ a training platform on Flask + SQLite, internal tools, custom players.
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/merko/1-repos-per-language.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/vue/1-repos-per-language.svg">
-  <img alt="Repos per language" src="./profile-summary-card-output/merko/1-repos-per-language.svg" width="48%">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./profile-summary-card-output/merko/2-most-commit-language.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/vue/2-most-commit-language.svg">
-  <img alt="Most commit language" src="./profile-summary-card-output/merko/2-most-commit-language.svg" width="48%">
-</picture>
-
-<br>
-
-<picture>
   <source media="(prefers-color-scheme: dark)"  srcset="https://streak-stats.demolab.com/?user=kostya5524&background=00000000&stroke=30363d&border=30363d&ring=a3e635&fire=4ade80&currStreakLabel=a3e635&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=7d8590&hide_border=false">
   <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=kostya5524&background=00000000&stroke=d0d7de&border=d0d7de&ring=1a7f37&fire=2da44e&currStreakLabel=1a7f37&sideLabels=1f2328&currStreakNum=1f2328&sideNums=1f2328&dates=656d76&hide_border=false">
   <img alt="Streak" src="https://streak-stats.demolab.com/?user=kostya5524&background=00000000&stroke=30363d&border=30363d&ring=a3e635&fire=4ade80&currStreakLabel=a3e635&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=7d8590" height="165">
