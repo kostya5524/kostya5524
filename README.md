@@ -218,13 +218,13 @@ a training platform on Flask + SQLite, internal tools, custom players.
 
 ```mermaid
 flowchart LR
-    A["real problem<br/>I hit myself"] --> B["crude prototype<br/>same day"]
-    B --> C{"does it<br/>actually help?"}
-    C -->|no| Z["drop it<br/>no sunk cost"]
-    C -->|yes| D["dockerize<br/>nginx + TLS"]
-    D --> E["monitoring<br/>+ backups"]
-    E --> F["in production<br/>real users"]
-    F --> G["extract the tool<br/>open source"]
+    A[a real problem I hit myself] --> B[crude prototype the same day]
+    B --> C{does it actually help}
+    C -->|no| Z[drop it, no sunk cost]
+    C -->|yes| D[dockerize it, nginx and TLS]
+    D --> E[monitoring and backups]
+    E --> F[in production with real users]
+    F --> G[extract the tool, open source it]
     G --> A
 ```
 
